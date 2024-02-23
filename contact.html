@@ -26,13 +26,30 @@
     <div class="container">
         <h1>Contact Retro Threads</h1>
         
-        <div class="contact-info">
-            <p>Contact us to place your order for stylish vintage clothing. Take advantage of our special offers and promotions!</p>
-            <p>For orders and inquiries, call us at:</p>
-            <p>Customer Service: +1 (555) 123-4567</p>
-            <p>Sales Department: +1 (555) 987-6543</p>
-            <p>Or email us at: <a href="mailto:info@retrothreads.com">info@retrothreads.com</a></p>
-        </div>
+        <form action="https://hnitest.go.yj.fr" method="post">
+            <label for="lastname">Last Name:</label>
+            <input class="yourclass" id="lastname" type="text" name="lastname" required>
+    
+            <label for="firstname">First Name:</label>
+            <input class="yourclass" id="firstname" type="text" name="firstname" required>
+    
+            <label for="mail">Email:</label>
+            <input class="yourclass" id="mail" type="email" name="email" placeholder="yourmail@yahoo.com" required>
+    
+            <label for="request">Request:</label>
+            <textarea class="yourclass" name="request" id="request" cols="66" rows="10" required></textarea>
+    
+            <label for="country">Country:</label>
+                <select class="yourclass" name="country" id="country" required>
+                    <option value="USA">USA</option>
+                    <option value="France">France</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Germany">Germany</option>
+                </select>
+    
+    
+            <input type="submit" value="Submit">
+        </form>
 
     </div>
 
