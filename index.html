@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Website</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome to Retro Threads</h1>
+        <p>Discover unique secondhand clothing that tells a story.</p>
+    </div>
+
+    <form action="https://hnitest.go.yj.fr" method="post">
+        <label for="lastname">Last Name:</label>
+        <input class="yourclass" id="lastname" type="text" name="lastname" required>
+
+        <label for="firstname">First Name:</label>
+        <input class="yourclass" id="firstname" type="text" name="firstname" required>
+
+        <label for="mail">Email:</label>
+        <input class="yourclass" id="mail" type="email" name="email" placeholder="yourmail@yahoo.com" required>
+
+        <label for="request">Request:</label>
+        <textarea class="yourclass" name="request" id="request" cols="66" rows="10" required></textarea>
+
+        <label for="country">Country:</label>
+            <select class="yourclass" name="country" id="country" required>
+                <option value="USA">USA</option>
+                <option value="France">France</option>
+                <option value="Spain">Spain</option>
+                <option value="Germany">Germany</option>
+            </select>
+
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
