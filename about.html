@@ -5,26 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Brand Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html">Photo Gallery</a></li>
-            <li><a href="store.html">Store</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Brand</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Photo Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="container">
-        <h1>About Retro Threads</h1>
-        <p>At Retro Threads, we are not just a store; we are a time-travel experience. Step into our world where vintage meets modern, and each piece of clothing tells a story of its own.</p>
+    <div class="container mt-4">
+        <h1 class="display-4">About Retro Threads</h1>
+        <p class="lead">At Retro Threads, we are not just a store; we are a time-travel experience. Step into our world where vintage meets modern, and each piece of clothing tells a story of its own.</p>
 
         <p>Established in the heart of the city, Retro Threads has been curating a collection of high-quality, handpicked retro and vintage clothing for over a decade. Our passion for fashion history and sustainable living drives us to bring you a unique selection that transcends time.</p>
 
@@ -37,6 +46,9 @@
         <p>Join us on this journey through the decades, where fashion is more than just a trend; it's a form of expression. Explore, experiment, and elevate your style with Retro Threads.</p>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -5,88 +5,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retro Threads Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html">Photo Gallery</a></li>
-            <li><a href="store.html">Store</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Brand</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Photo Gallery</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="store.html">Store</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="container">
-        <h1>Retro Threads Store</h1>
-        
-        <div class="store-item">
-            <img src="./images/store/Shirt1.jpg" alt="Men's Fashion 1">
-            <h2>Casual Shirt for Men</h2>
-            <p>Price: €15.99</p>
-        </div>
+    <div class="container mt-4">
+        <h1 class="display-4">Retro Threads Store</h1>
 
-        <div class="store-item">
-            <img src="./images/store/Shirt2.jpg" alt="Men's Fashion 2">
-            <h2>Casual Shirt for Men</h2>
-            <p>Price: €18.50</p>
-        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <img src="./images/store/Shirt1.jpg" class="card-img-top" alt="Men's Fashion 1">
+                    <div class="card-body">
+                        <h2 class="card-title">Casual Shirt for Men</h2>
+                        <p class="card-text">Price: €15.99</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="store-item">
-            <img src="./images/store/Shirt3.jpg" alt="Men's Fashion 1">
-            <h2>Casual Shirt for Men</h2>
-            <p>Price: €15.99</p>
-        </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <img src="./images/store/Shirt2.jpg" class="card-img-top" alt="Men's Fashion 2">
+                    <div class="card-body">
+                        <h2 class="card-title">Casual Shirt for Men</h2>
+                        <p class="card-text">Price: €18.50</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="store-item">
-            <img src="./images/store/Jacket1.jpg" alt="Men's Fashion 2">
-            <h2>Vintage Denim Jacket</h2>
-            <p>Price: €18.50</p>
-        </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <img src="./images/store/Shirt3.jpg" class="card-img-top" alt="Men's Fashion 3">
+                    <div class="card-body">
+                        <h2 class="card-title">Casual Shirt for Men</h2>
+                        <p class="card-text">Price: €15.99</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="store-item">
-            <img src="./images/store/Jacket2.jpg"  alt="Men's Fashion 2">
-            <h2>Vintage Denim Jacket</h2>
-            <p>Price: €18.50</p>
-        </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <img src="./images/store/Jacket1.jpg" class="card-img-top" alt="Men's Fashion 4">
+                    <div class="card-body">
+                        <h2 class="card-title">Vintage Denim Jacket</h2>
+                        <p class="card-text">Price: €18.50</p>
+                    </div>
+                </div>
+            </div>
 
-        
-        <div class="store-item">
-            <img src="./images/store/Boho1.jpg" alt="Women's Fashion 1">
-            <h2>Boho Maxi Dress</h2>
-            <p>Price: €20.99</p>
-        </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <img src="./images/store/Jacket2.jpg" class="card-img-top" alt="Men's Fashion 5">
+                    <div class="card-body">
+                        <h2 class="card-title">Vintage Denim Jacket</h2>
+                        <p class="card-text">Price: €18.50</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="store-item">
-            <img src="./images/store/Boho3.jpg" alt="Women's Fashion 2">
-            <h2>Boho Maxi Dress</h2>
-            <p>Price: €16.75</p>
-        </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <img src="./images/store/Boho1.jpg" class="card-img-top" alt="Women's Fashion 1">
+                    <div class="card-body">
+                        <h2 class="card-title">Boho Maxi Dress</h2>
+                        <p class="card-text">Price: €20.99</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="store-item">
-            <img src="./images/store/JacketWoman1.jpg" alt="Women's Fashion 1">
-            <h2>Jacket Maxi Dress</h2>
-            <p>Price: €20.99</p>
-        </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <img src="./images/store/Boho3.jpg" class="card-img-top" alt="Women's Fashion 2">
+                    <div class="card-body">
+                        <h2 class="card-title">Boho Maxi Dress</h2>
+                        <p class="card-text">Price: €16.75</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="store-item">
-            <img src="./images/store/JacketWoman2.jpg" alt="Women's Fashion 2">
-            <h2>Retro High-Waisted Jacket</h2>
-            <p>Price: €16.75</p>
-        </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <img src="./images/store/JacketWoman1.jpg" class="card-img-top" alt="Women's Fashion 3">
+                    <div class="card-body">
+                        <h2 class="card-title">Jacket Maxi Dress</h2>
+                        <p class="card-text">Price: €20.99</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="store-item">
-            <img src="./images/store/JacketWoman3.jpg" alt="Women's Fashion 1">
-            <h2>Jacket Maxi Dress</h2>
-            <p>Price: €20.99</p>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <img src="./images/store/JacketWoman2.jpg" class="card-img-top" alt="Women's Fashion 4">
+                    <div class="card-body">
+                        <h2 class="card-title">Retro High-Waisted Jacket</h2>
+                        <p class="card-text">Price: €16.75</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <img src="./images/store/JacketWoman3.jpg" class="card-img-top" alt="Women's Fashion 5">
+                    <div class="card-body">
+                        <h2 class="card-title">Jacket Maxi Dress</h2>
+                        <p class="card-text">Price: €20.99</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

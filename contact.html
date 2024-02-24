@@ -5,54 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Retro Threads</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="gallery.html">Photo Gallery</a></li>
-            <li><a href="store.html">Store</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Brand</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Photo Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="container">
-        <h1>Contact Retro Threads</h1>
-        
+    <div class="container mt-4">
+        <h1 class="display-4">Contact Retro Threads</h1>
+
         <form action="https://hnitest.go.yj.fr" method="post">
-            <label for="lastname">Last Name:</label>
-            <input class="yourclass" id="lastname" type="text" name="lastname" required>
-    
-            <label for="firstname">First Name:</label>
-            <input class="yourclass" id="firstname" type="text" name="firstname" required>
-    
-            <label for="mail">Email:</label>
-            <input class="yourclass" id="mail" type="email" name="email" placeholder="yourmail@yahoo.com" required>
-    
-            <label for="request">Request:</label>
-            <textarea class="yourclass" name="request" id="request" cols="66" rows="10" required></textarea>
-    
-            <label for="country">Country:</label>
-                <select class="yourclass" name="country" id="country" required>
+            <div class="form-group">
+                <label for="lastname">Last Name:</label>
+                <input class="form-control" id="lastname" type="text" name="lastname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input class="form-control" id="firstname" type="text" name="firstname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mail">Email:</label>
+                <input class="form-control" id="mail" type="email" name="email" placeholder="yourmail@yahoo.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="request">Request:</label>
+                <textarea class="form-control" name="request" id="request" cols="66" rows="10" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select class="form-control" name="country" id="country" required>
                     <option value="USA">USA</option>
                     <option value="France">France</option>
                     <option value="Spain">Spain</option>
                     <option value="Germany">Germany</option>
                 </select>
-    
-    
-            <input type="submit" value="Submit">
-        </form>
+            </div>
 
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
