@@ -24,6 +24,7 @@ nav ul li {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
+    gap: 10px;
 }
 
 form {
@@ -61,17 +62,21 @@ form input[type="submit"]:hover {
 }
 
 .gallery-item {
-    text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px; 
 }
 
 .gallery-item img {
     width: 100%;
-    height: auto; 
-    max-width: 400px; 
-    border: 1px solid #ddd;
-    border-radius: 5px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.gallery-item h2 {
+    margin-top: 10px; 
+}
+
+.gallery-item {
+    height: 300px; 
 }
 
 .store-item {
@@ -118,4 +123,24 @@ form input[type="submit"]:hover {
     text-align: justify; 
     line-height: 1.6;
     font-size: 2vh;
+}
+
+
+.card {
+    height: 100%;
+    margin-bottom: 2px !important;
+}
+
+.card-img-top {
+    height: 350px;
+    object-fit: cover;
+}
+
+.card-body {
+    height: calc(100% - 200px);
+    overflow: auto;
+}
+
+.card-title {
+    margin-top: 10px;
 }
